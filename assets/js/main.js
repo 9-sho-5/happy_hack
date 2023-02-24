@@ -17,11 +17,23 @@ $('.slider').slick({
     slidesToScroll: 1, // スクロールするスライド数を設定
     responsive: [
         {
-          breakpoint: 768, // 399px以下のサイズに適用
+          breakpoint: 1024, // 1024px以下のサイズに適用
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 768, // 768px以下のサイズに適用
           settings: {
             slidesToShow: 2,
           },
         },
+        {
+            breakpoint: 450, // 768px以下のサイズに適用
+            settings: {
+              slidesToShow: 1,
+            },
+          },
       ],
 });
 
