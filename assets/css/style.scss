@@ -9,6 +9,17 @@ $hiragino: 'Zen Kaku Gothic Antique', sans-serif;
     scroll-behavior: smooth;
 }
 
+.anime{
+    position: relative;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+.animated{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 body{
     overflow-y: auto;
 }
